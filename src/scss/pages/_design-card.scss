@@ -8,3 +8,26 @@
   width: 100%;
   margin: auto;
 }
+.form__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__iconL {
+  font-size: 18px;
+  color: $color-icon;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.form__text {
+  font-size: 18px;
+  font-family: $font-main;
+  color: $color-text;
+  text-transform: uppercase;
+  margin: 10px 7px;
+}
+.form__iconR {
+  font-size: 18px;
+  margin-right: 20px;
+  color: $color-text;
+}
