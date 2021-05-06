@@ -2,38 +2,38 @@
   width: 30px;
   height: 25px;
   & .a {
-    background-color: #114e4e;
+    background-color: $color-1a;
   }
   & .b {
-    background-color: #438792;
+    background-color: $color-1b;
   }
   & .c {
-    background-color: #a2deaf;
+    background-color: $color-1c;
   }
 }
 .pallete2 {
   width: 30px;
   height: 25px;
   & .a {
-    background-color: #420101;
+    background-color: $color-2a;
   }
   & .b {
-    background-color: #bd1010;
+    background-color: $color-2b;
   }
   & .c {
-    background-color: #e95626;
+    background-color: $color-2c;
   }
 }
 .pallete3 {
   width: 30px;
   height: 25px;
   & .a {
-    background-color: #3e5b65;
+    background-color: $color-3a;
   }
   & .b {
-    background-color: #eab052;
+    background-color: $color-3b;
   }
   & .c {
-    background-color: #a0c0cf;
+    background-color: $color-3c;
   }
 }
