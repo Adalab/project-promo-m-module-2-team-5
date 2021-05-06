@@ -1,0 +1,39 @@
+.pallete1 {
+  width: 30px;
+  height: 25px;
+  & .a {
+    background-color: #114e4e;
+  }
+  & .b {
+    background-color: #438792;
+  }
+  & .c {
+    background-color: #a2deaf;
+  }
+}
+.pallete2 {
+  width: 30px;
+  height: 25px;
+  & .a {
+    background-color: #420101;
+  }
+  & .b {
+    background-color: #bd1010;
+  }
+  & .c {
+    background-color: #e95626;
+  }
+}
+.pallete3 {
+  width: 30px;
+  height: 25px;
+  & .a {
+    background-color: #3e5b65;
+  }
+  & .b {
+    background-color: #eab052;
+  }
+  & .c {
+    background-color: #a0c0cf;
+  }
+}
