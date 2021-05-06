@@ -12,24 +12,31 @@
   width: 75px;
   height: 30px;
   background: transparent;
-  color: #54585a;
+  color: $color-grey;
   text-transform: uppercase;
-  font-family: OpenSans;
+  font-family: $font-main;
   font-size: 12px;
   border: solid 1px white;
-  border-radius: 2em;
+  border-radius: 15px;
   margin-top: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
+.preview__resetbutton--title {
+  font-size: 12px;
+}
+
 .fa-trash-alt {
-  width: 11px;
-  height: 20px;
+  font-size: 12px;
+  color: $color-grey;
 }
 .preview__card {
   width: 240px;
   height: 329px;
   background: white;
   margin-top: 20px;
-  margin-left: 45px;
 }
 .card__line {
   border-left: solid 5px #114e4e;
@@ -38,14 +45,14 @@
   height: 20px;
   color: #114e4e;
   text-transform: capitalize;
-  font-family: Monserrat bold;
+  font-family: $font-card bold;
   font-size: 18px;
-  padding-top: 21px;
+  margin-top: 21px;
   margin-left: 20px;
 }
 .card__job {
   height: 20px;
-  color: #54585a;
+  color: $color-grey;
   font-family: Monserrat;
   font-size: 16px;
   margin-left: 20px;
