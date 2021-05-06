@@ -1,39 +1,43 @@
+.pallette {
+  width: 90px;
+  height: 25px;
+}
 .pallete1 {
   width: 30px;
   height: 25px;
-  & .a {
+  &.a {
     background-color: $color-1a;
   }
-  & .b {
+  &.b {
     background-color: $color-1b;
   }
-  & .c {
+  &.c {
     background-color: $color-1c;
   }
 }
 .pallete2 {
   width: 30px;
   height: 25px;
-  & .a {
+  &.a {
     background-color: $color-2a;
   }
-  & .b {
+  .b {
     background-color: $color-2b;
   }
-  & .c {
+  .c {
     background-color: $color-2c;
   }
 }
 .pallete3 {
   width: 30px;
   height: 25px;
-  & .a {
+  .a {
     background-color: $color-3a;
   }
-  & .b {
+  .b {
     background-color: $color-3b;
   }
-  & .c {
+  .c {
     background-color: $color-3c;
   }
 }
