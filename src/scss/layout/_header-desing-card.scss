@@ -2,4 +2,10 @@
   width: 100vw;
   height: 111px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    width: 201px;
+  }
 }
