@@ -1,0 +1,54 @@
+.form__fill__content {
+  font-family: $font-main;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__fill__label {
+  line-height: 20px;
+  padding-bottom: 7px;
+  color: $color-secondarytext;
+}
+
+.form__fill__input {
+  height: 30px;
+  border: 1px solid #2b9696;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: $color-bordertext;
+  padding-left: 5px;
+}
+
+.form__fill__photo {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__fill__photo--bt {
+  width: 140px;
+  height: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: $color-icon;
+  color: white;
+}
+.form__fill__photo--preview {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-secondarytext;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hidden-field {
+  display: none;
+}
