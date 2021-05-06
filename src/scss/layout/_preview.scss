@@ -3,6 +3,11 @@
   height: 475px;
   background: linear-gradient(#bfcdd0, #dde9ed);
 }
+.preview__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .preview__resetbutton {
   width: 75px;
   height: 30px;
@@ -14,7 +19,6 @@
   border: solid 1px white;
   border-radius: 2em;
   margin-top: 38px;
-  margin-left: 45px;
 }
 .fa-trash-alt {
   width: 11px;
@@ -26,6 +30,9 @@
   background: white;
   margin-top: 20px;
   margin-left: 45px;
+}
+.card__line {
+  border-left: solid 5px #114e4e;
 }
 .card__name {
   height: 20px;
