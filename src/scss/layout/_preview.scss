@@ -14,9 +14,6 @@
     width: 57%;
   }
 }
-.preview__center {
-  width: 240px;
-}
 .preview__resetbutton {
   width: 75px;
   height: 30px;
@@ -28,23 +25,14 @@
   border: solid 1px white;
   border-radius: 15px;
   margin-top: 38px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   @media all and (min-width: 768px) {
     margin-top: 173px;
   }
 }
-.preview__resetbutton--title {
-  font-size: 12px;
-}
 .fa-trash-alt {
   font-size: 12px;
+  line-height: 20px;
   color: $color-grey;
-  :hover {
-    font-size: 15px;
-  }
 }
 .preview__card {
   width: 240px;
@@ -75,7 +63,6 @@
   margin-left: 20px;
   margin-top: 4px;
 }
-
 .card__pic {
   width: 100%;
   height: 200px;
@@ -102,7 +89,4 @@
   :hover {
     font-size: 24px;
   }
-}
-.contact__icon__pic {
-  font-size: 18px;
 }
