@@ -5,6 +5,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media all and (min-width: 768px) {
+    border-radius: 6px;
+    width: 43%;
+    height: 812px;
+  }
+  @media all and (min-width: 1024px) {
+    width: 57%;
+  }
 }
 .preview__center {
   width: 240px;
@@ -24,6 +32,9 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  @media all and (min-width: 768px) {
+    margin-top: 173px;
+  }
 }
 .preview__resetbutton--title {
   font-size: 12px;
