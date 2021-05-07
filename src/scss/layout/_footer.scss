@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  //height: 19.36vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 0px 20px;
+  border-top: 1px solid $color-borderfooter;
+
+  @media all and(min-width: 768px) {
+    //height: 5.86vh;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__copy {
+    font-size: 14px;
+    font-family: $font-main;
+    color: $color-smallfooter;
+    line-height: 20px;
+
+    @media all and(min-width: 768px) {
+      margin-left: 41px;
+    }
+  }
+
+  &__logo {
+    width: 103px;
+
+    @media all and(min-width: 768px) {
+      margin-right: 40px;
+    }
+  }
+}
