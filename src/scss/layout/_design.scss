@@ -1,10 +1,37 @@
-.pallette {
-  width: 90px;
+.colorselection {
+  border-bottom: 2px;
+  color: #d8d8d8;
+}
+
+.radioTitle {
+  display: inline;
+  font-size: 14px;
+  font-family: $font-main;
+  color: $color-text;
+  text-transform: uppercase;
+  margin: 25px 82px auto 40px;
+  padding: 0;
+}
+.coloroption {
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.design__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.pallete1,
+.pallete2,
+.pallete3 {
+  width: 30px;
   height: 25px;
 }
 .pallete1 {
-  width: 30px;
-  height: 25px;
   &.a {
     background-color: $color-1a;
   }
@@ -16,28 +43,24 @@
   }
 }
 .pallete2 {
-  width: 30px;
-  height: 25px;
   &.a {
     background-color: $color-2a;
   }
-  .b {
+  &.b {
     background-color: $color-2b;
   }
-  .c {
+  &.c {
     background-color: $color-2c;
   }
 }
 .pallete3 {
-  width: 30px;
-  height: 25px;
-  .a {
+  &.a {
     background-color: $color-3a;
   }
-  .b {
+  &.b {
     background-color: $color-3b;
   }
-  .c {
+  &.c {
     background-color: $color-3c;
   }
 }
