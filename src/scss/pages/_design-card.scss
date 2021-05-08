@@ -5,30 +5,40 @@
 @import "../layout/share";
 @import "../layout/footer-design-card";
 
-.content__form {
+.main__content {
   width: 100%;
-  margin: 7px auto;
+  background: linear-gradient(#f5f5f5, #ffffff);
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.content__form {
+  margin: 0 20px;
+  max-width: 500px;
+  @media all and (min-width: 768px) {
+    margin: 23px 30px auto 40px;
+  }
 }
 .form__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 .form__iconL {
   font-size: 18px;
   color: $color-icon;
   margin-right: 10px;
-  margin-left: 20px;
 }
 .form__text {
   font-size: 18px;
   font-family: $font-main;
   color: $color-text;
   text-transform: uppercase;
-  margin-top: 10px;
 }
 .form__iconR {
   font-size: 18px;
-  margin-right: 20px;
   color: $color-text;
 }
