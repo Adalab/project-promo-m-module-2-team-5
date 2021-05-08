@@ -8,12 +8,14 @@
   @media all and (min-width: 768px) {
     border-radius: 6px;
     width: 43%;
+    min-width: 329px;
     height: 812px;
     margin-top: 23px;
     margin-right: 40px;
   }
   @media all and (min-width: 1024px) {
     width: 57%;
+    min-width: 585px;
   }
 }
 .preview__resetbutton {
