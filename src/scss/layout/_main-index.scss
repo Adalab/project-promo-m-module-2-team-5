@@ -1,76 +1,67 @@
 .main-index {
   width: 100%;
-  height: 52.81vh;
+  //height: 52.81vh;
   background-color: $color-index-background;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   font-family: $font-main;
-  font-size: 0.75rem;
-  border-bottom: 0.18vh solid $color-borderfooter;
+  font-size: 12.8px;
 
   @media all and(min-width: 768px) {
-    font-size: 1rem;
-    height: 49.65vh;
+    font-size: 16px;
+    //height: 49.65vh;
   }
 
   &__title {
-    margin: 6.37vh 15.28vw 0px 14.787vw;
+    margin: 35.4px 49.3px 0px 47.7px;
     font-family: $font-title;
     color: $color-orange;
-    font-size: 1.188rem;
+    font-size: 19.2px;
 
     @media all and(min-width: 768px) {
-      margin: 3.1vh 31.85vw 0px;
-      font-size: 1.5rem;
+      margin: 31px 245px 0px;
+      font-size: 24px;
     }
   }
 
   &__subtitle {
     color: $color-secondarytext;
-    margin: 0px 8.68vw 0px 8.432vw;
+    margin: 0px 28px 0px 27.2px;
 
     @media all and(min-width: 768px) {
-      margin: 0px 28.34vw 0px 28.47vw;
+      margin: 0px 218px 0px 219px;
     }
   }
 
   &__options {
-    margin: 3.2vh 8.184vw 0px 7.936vw;
-    padding: 2.7vh 6.2vw 1.8vh;
+    margin: 17.8px 26.4px 0px 25.6px;
+    padding: 15px 20px 10px;
     display: flex;
-    gap: 7.44vw;
-    border: 0.28vh solid rgba(225, 115, 52, 0.21);
+    gap: 24px;
+    border: 1.6px solid rgba(225, 115, 52, 0.21);
     border-radius: 4px;
 
     @media all and(min-width: 768px) {
-      margin-top: 2.7vh;
-      margin-right: 28.73vw;
-      margin-left: 28.86vw;
-      gap: 3.9vw;
-      border-width: 0.2vh;
+      margin-top: 27px;
+      margin-right: 221px;
+      margin-left: 222px;
+      gap: 30px;
+      border-width: 2px;
     }
 
     .options__item {
-      width: 18.6vw;
-      height: 8.784vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-
-      @media all and(min-width: 768px) {
-        width: 9.75vw;
-        height: 6.1vh;
-      }
 
       .item__pic {
         color: $color-icon;
-        font-size: 1.375rem;
+        font-size: 22.4px;
 
         @media all and(min-width: 768px) {
-          font-size: 1.75rem;
+          font-size: 28px;
         }
       }
 
@@ -85,17 +76,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 39.99vw;
-    height: 7.56vh;
-    margin: 6.948vh 31.31vw 5.4vh 27.9vw;
+    width: 129px;
+    height: 42px;
+    margin: 38.6px 101px 30px 90px;
     background-color: $color-button;
     border-radius: 21px;
     font-weight: SemiBold;
-    font-size: 1rem;
+    font-size: 16px;
     text-transform: uppercase;
 
     @media all and(min-width: 768px) {
-      margin: 18.6vh 41.47vw 5.9vh 41.6vw;
+      margin: 186px 319px 59px 320px;
     }
 
     .nav__startlink {
