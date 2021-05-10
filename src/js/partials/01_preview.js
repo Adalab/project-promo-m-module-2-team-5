@@ -20,9 +20,10 @@ const fillContent = document.querySelector('.form__fill__content');
 
 function collapsable(event) {
     let form = event.currentTarget
-    colorSelection.classList.toggle('collapsable_none') = form;
+    colorSelection.classList.toggle('collapsable_none');
+    fillContent.classList.toggle('collapsable_none');
 }
-formTitle.addEventListener('click', collapsable);
+contentForm.addEventListener('click', collapsable);
 
 
 
