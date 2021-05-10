@@ -1,6 +1,5 @@
 .main-index {
   width: 100%;
-  height: 52.82vh;
   background-color: $color-index-background;
   display: flex;
   flex-direction: column;
@@ -11,8 +10,6 @@
 
   @media all and(min-width: 768px) {
     font-size: 16px;
-    //medida para ajustar//:
-    height: 480px;
   }
 
   &__title {

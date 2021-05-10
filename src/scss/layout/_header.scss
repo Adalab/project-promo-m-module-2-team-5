@@ -1,22 +1,17 @@
 .header {
   width: 100%;
-  height: 27.82vh;
   background-color: $color-index-background;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media all and(min-width: 768px) {
-    height: 44.48vh;
-  }
-
   &__img {
     width: 250px;
-    margin-top: 16.63vh;
+    margin-top: 95px;
 
     @media all and(min-width: 768px) {
       width: 419px;
-      margin-top: 34.21vh;
+      margin-top: 350px;
     }
   }
 }
