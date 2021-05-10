@@ -14,29 +14,39 @@ function contentCard(event) {
 cardFullname.addEventListener('change', contentCard);
 */
 
-/*const contentForm = document.querySelector('.content__form');
-const formTitle = document.querySelector('.form__title');
-const colorSelection = document.querySelector('.colorselection');
+
+//const contentForm = document.querySelector('.content__form');
+//const formTitle = document.querySelectorAll('.form__title');
+
+const contentForm = document.querySelector('.content__form');
+
+const colorContain = document.querySelector('.colorselection');
 const fillContent = document.querySelector('.form__fill__content');
+const shareContent = document.querySelector('.share__content');
+
+const formTitle = document.querySelectorAll('.form__title');
+const titleColor = document.querySelector('.js-titlecolor');
+const colorSelection = document.querySelector('.colorselection');
+
+
+function collapsableColor() {
+    colorContain.classList.toggle('collapsable_none');
+    titleColor.classList.toggle('fa-angle-up');
+    titleColor.classList.toggle('fa-object-ungroup');
+    }
+contentForm.addEventListener('click', collapsableColor);
+
+/*function collapsable(event) {
+    let form = event.currentTarget
+    colorSelection.classList.toggle('collapsable_none');
+}
+
+contentForm.addEventListener('click', collapsable);
 
 function collapsable(event) {
     let form = event.currentTarget
     colorSelection.classList.toggle('collapsable_none');
-    fillContent.classList.toggle('collapsable_none');
 }
-contentForm.addEventListener('click', collapsable);
+
+form.addEventListener('click', collapsable);
 */
-
-
-const formTitle = document.querySelectorAll('.form__title');
-const colorSelection = document.querySelector('.colorselection');
-const fillContent = document.querySelector('.form__fill__content');
-const shareContent = document.querySelector('.share__content');
-
-
-function collapsable(event) {
-    let formTitle = event.currentTarget
-    colorSelection.classList.toggle('collapsable_none');
-}
-
-formTitle.addEventListener('click', collapsable);
