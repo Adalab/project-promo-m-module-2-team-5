@@ -27,6 +27,7 @@ function collapsable(event) {
 contentForm.addEventListener('click', collapsable);
 */
 
+
 const formTitle = document.querySelectorAll('.form__title');
 const colorSelection = document.querySelector('.colorselection');
 const fillContent = document.querySelector('.form__fill__content');
