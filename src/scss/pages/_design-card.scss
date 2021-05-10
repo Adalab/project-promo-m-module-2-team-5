@@ -42,3 +42,13 @@
   font-size: 18px;
   color: $color-text;
 }
+
+.form__border,
+.form__border--share {
+  height: 1px;
+  background-color: $color-bordertext;
+}
+
+.form__border--share {
+  margin-bottom: 30px;
+}
