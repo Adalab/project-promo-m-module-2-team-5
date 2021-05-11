@@ -12,7 +12,42 @@ function contentCard(event) {
 //escucho input
 cardFullname.addEventListener('change', contentCard);
 
+//PRUEBA 0 COLLAPSABLE
+const titles = document.querySelectorAll('.form__title');
+const colorContain = document.querySelector('.colorselection');
+const fillContent = document.querySelector('.form__fill__content');
+const shareContent = document.querySelector('.share__content');
 
+function changeCollap () {
+colorContain.classList.toggle('noneCollapsable');
+fillContent.classList.toggle('noneCollapsable');
+shareContent.classList.toggle('noneCollapsable');
+}
+for (const title of titles) {
+    title.addEventListener('click', changeCollap)
+}
+
+
+
+/*//PRUEBA 1 COLLAPSABLE
+const form = document.querySelector('.content__form');
+
+const colorContain = document.querySelector('.colorselection');
+const fillContent = document.querySelector('.form__fill__content');
+const shareContent = document.querySelector('.share__content');
+
+const formTitle = document.querySelector('.form__title');
+const titleColor = document.querySelector('.js-titlecolor');
+const colorSelection = document.querySelector('.colorselection');
+
+const collapsableColor = function(event) {
+    const formTitle = event.currentTarget
+    colorContain.classList.toggle('collapsable_none');
+    //formTitle.classList.toggle('fa-angle-up');
+    //formTitle.classList.toggle('fa-object-ungroup');
+    }
+formTitle.addEventListener('click', collapsableColor);
+*/
 
 /*//PRUEBAS COLAPSABLE
 const form = document.querySelector('.content__form');
