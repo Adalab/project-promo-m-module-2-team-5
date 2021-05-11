@@ -50,13 +50,14 @@
   justify-content: center;
 }
 .card__line {
-  border-left: solid 5px $color-darkgreen;
+  border-left: solid 5px $color-1b;
 }
 .card__name {
   height: 20px;
-  color: $color-darkgreen;
+  color: $color-1a;
   text-transform: capitalize;
   font-family: $font-card;
+  font-weight: 700;
   font-size: 18px;
   margin-left: 20px;
 }
@@ -85,8 +86,8 @@
   width: 32px;
   height: 32px;
   font-size: 18px;
-  border: solid 2px #a2deaf;
-  color: $color-darkgreen;
+  border: solid 2px $color-1c;
+  color: $color-1a;
   border-radius: 50%;
   display: flex;
   justify-content: center;
