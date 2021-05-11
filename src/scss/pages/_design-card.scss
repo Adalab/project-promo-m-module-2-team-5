@@ -4,6 +4,7 @@
 @import "../layout/fill";
 @import "../layout/share";
 @import "../layout/footer-design-card";
+@import "../layout/collapsable";
 
 .main__content {
   width: 100%;
@@ -16,9 +17,11 @@
 }
 .content__form {
   margin: 0 20px;
+  width: 330px;
   max-width: 500px;
   @media all and (min-width: 768px) {
     margin: 23px 30px auto 40px;
+    width: 360px;
   }
 }
 .form__title {

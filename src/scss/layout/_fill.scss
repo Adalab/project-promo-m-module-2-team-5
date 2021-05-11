@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   padding-top: 25px;
+  &.collapsable__container {
+    display: none;
+  }
 }
 
 .form__fill__label {
@@ -46,8 +49,4 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.hidden-field {
-  display: none;
 }

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //input en el formulario
 const cardFullname = document.querySelector('.form__fill__input');
@@ -6,9 +6,9 @@ const cardFullname = document.querySelector('.form__fill__input');
 let previewName = document.querySelector('.card__name');
 
 function contentCard(event) {
-    let content = event.currentTarget.value;
-    previewName.innerHTML = content; 
-};
+  let content = event.currentTarget.value;
+  previewName.innerHTML = content;
+}
 //escucho input
 cardFullname.addEventListener('change', contentCard);
 
@@ -66,7 +66,7 @@ let form = event.currentTarget
 }
 form.addEventListener('click', collapsable);
 
-/*PRUEBA 
+/*PRUEBA
 const collapsable2 = function(event) {
     if (fillContent.classList.contains('noneCollapsable')) {
         fillContentn.classList.remove('noneCollapsable');
