@@ -12,6 +12,8 @@ function contentCard(event) {
 //escucho input
 cardFullname.addEventListener('change', contentCard);
 
+
+
 /*//PRUEBAS COLAPSABLE
 const form = document.querySelector('.content__form');
 const formTitle = document.querySelectorAll('.form__title');
