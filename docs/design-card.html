@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome profile-cards</title>
+    <script
+      src="https://kit.fontawesome.com/84c55c5ffe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <header class="header-design-card">
+        <img
+          src="./assets/images/logo-awesome-profile-cards.svg"
+          class="header-design-card__img"
+          title="Awesome Profile Cards"
+          alt="Awesome Profile
+          Cards Logo"
+        />
+      </header>
+
+      <section class="main__content">
+        <section class="main__preview">
+          <button class="preview__resetbutton">
+            <i class="far fa-trash-alt"></i> reset
+          </button>
+          <div class="preview__card">
+            <div class="card__line">
+              <h2 class="card__name">nombre apellido</h2>
+              <h3 class="card__job">Front-end developer</h3>
+            </div>
+            <img class="card__pic" src="./assets/images/preview.jpg" />
+            <ul class="card__contact">
+              <li class="contact__icon">
+                <a
+                  class="contact__icon__pic fas fa-mobile-alt"
+                  href=""
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="contact__icon">
+                <a
+                  class="contact__icon__pic far fa-envelope"
+                  href=""
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="contact__icon">
+                <a
+                  class="contact__icon__pic fab fa-linkedin-in"
+                  href=""
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="contact__icon">
+                <a
+                  class="contact__icon__pic fab fa-github-alt"
+                  href=""
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <form class="content__form" action="">
+          <section class=" js-collapsable-container">
+          <div class="form__title js-collapsable-header collapsable--close">
+            <h2 class="form__text js-collapsable-header"><i class="far fa-object-ungroup form__iconL"></i>Diseña</h2>
+            <i class="fas fa-angle-up form__iconR"></i>
+          </div>
+
+
+          <div class="colorselection hidden__container collapsable--close">
+            <legend class="radioTitle">Colores</legend>
+            <div class="design__content">
+              <!--<label for="pallete"></label>-->
+              <input class="coloroption" type="radio" name="coloroption" id="pallete" />
+              <div class="pallete1 a"></div>
+              <div class="pallete1 b"></div>
+              <div class="pallete1 c"></div>
+            </div>
+
+            <div class="design__content">
+              <!--<label for="pallete"></label>-->
+              <input class="coloroption" type="radio" name="coloroption" id="pallete" />
+              <div class="pallete2 a"></div>
+              <div class="pallete2 b"></div>
+              <div class="pallete2 c"></div>
+            </div>
+
+            <div class="design__content">
+              <!--<label for="pallete"></label>-->
+              <input class="coloroption" type="radio" name="coloroption" id="pallete" />
+              <div class="pallete3 a"></div>
+              <div class="pallete3 b"></div>
+              <div class="pallete3 c"></div>
+            </div>
+
+          </div>
+
+          <div class="form__border"></div>
+          </section>
+          <section class="fill js-collapsable-container collapsable--close">
+
+          <div class="form__title js-collapsable-header collapsable--close">
+            <h2 class="form__text js-collapsable-header"><i class="far fa-keyboard form__iconL"></i>Rellena</h2>
+            <i class="fas fa-angle-up form__iconR"></i>
+          </div>
+
+
+          <div class="form__fill__content hidden__container">
+            <label for="fullname" class="form__fill__label">Nombre completo </label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              class="form__fill__input"
+              placeholder="Ej: Sally Jill"
+              required
+            />
+
+            <label for="job" class="form__fill__label">Puesto </label>
+            <input
+              type="text"
+              name="job"
+              id="job"
+              class="form__fill__input"
+              placeholder="Ej:Front-end unicorn"
+              required
+            />
+
+            <label class="form__fill__label">Imagen de perfil </label>
+            <div class="form__fill__photo">
+              <button class="form__fill__photo--bt">Añadir imagen</button>
+              <input type="file" name="photo" id="photo" value="Añadir imagen" />
+
+              <div class="form__fill__photo--preview"></div>
+            </div>
+            <label for="email" class="form__fill__label">Email </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form__fill__input"
+              placeholder="Ej:sally-hill@gmail.com"
+              required
+            />
+
+            <label for="phone" class="form__fill__label">Teléfono </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="form__fill__input"
+              placeholder="Ej:555-55-55"
+              required
+            />
+
+            <label for="linkedin" class="form__fill__label">linkedin </label>
+            <input
+              type="text"
+              name="linkedin"
+              id="linkedin"
+              class="form__fill__input"
+              placeholder="Ej: linkedin.com/in/Sally Jill"
+              required
+            />
+
+            <label for="github" class="form__fill__label">github </label>
+            <input
+              type="text"
+              name="github"
+              id="github"
+              class="form__fill__input"
+              placeholder="Ej: @Sally-Jill"
+              required
+            />
+          </div>
+          </section>
+          <div class="form__border"></div>
+
+          <section class="sharecards js-collapsable-container collapsable--close">
+          <div class="form__title js-collapsable-header collapsable--close">
+            <h2 class="form__text js-collapsable-header"><i class="fas fa-share-alt form__iconL"></i>Comparte</h2>
+            <i class="fas fa-angle-up form__iconR"></i>
+          </div>
+
+
+          <div class="share__content hidden__container">
+            <div class="button js-collapsable-container js-hidden">
+              <div class="button__text">
+                <i class="far fa-address-card button__icon"></i>Crear tarjeta
+              </div>
+            </div>
+
+            <div class="form__border"></div>
+
+            <div class="shared js-hidden-collapsable js-hidden">
+              <h3 class="shared__text">La tarjeta ha sido creada:</h3>
+              <div class="shared__link">https://awesome-profile-card.comBLABLABLA</div>
+              <div class="shared__button">
+                <div class="shared__button--text">
+                  <i class="shared__icon fab fa-twitter shared__button--icon"></i
+                  >Compartir en Twitter
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <div class="form__border--share"></div>
+
+
+        </form>
+      </section>
+
+      <footer class="footer">
+        <small class="footer__copy">Awesome profile-cards @2021</small>
+        <img
+          class="footer__logo"
+          src="./assets/images/logo-adalab.png"
+          alt="Logo Adalab"
+          title="Adalab"
+        />
+      </footer>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
