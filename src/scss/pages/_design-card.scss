@@ -17,11 +17,11 @@
 }
 .content__form {
   margin: 0 20px;
-  width: 330px;
-  max-width: 500px;
+
   @media all and (min-width: 768px) {
     margin: 23px 30px auto 40px;
-    width: 360px;
+    max-width: 500px;
+    width: 80%;
   }
 }
 .form__title {
