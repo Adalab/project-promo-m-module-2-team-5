@@ -1,5 +1,5 @@
-'use strict';
-
+"use strict";
+/*
 //input en el formulario
 const cardFullname = document.querySelector('.form__fill__input');
 //campo card preview

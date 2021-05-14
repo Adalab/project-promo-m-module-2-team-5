@@ -4,37 +4,34 @@
   </button>
   <div class="preview__card">
     <div class="card__line">
-      <h2 class="card__name">nombre apellido</h2>
-      <h3 class="card__job">Front-end developer</h3>
+      <h2 class="card__name js-preview-name">Nombre apellido</h2>
+      <h3 class="card__job js-preview-job">Front-end developer</h3>
     </div>
     <img class="card__pic" src="./assets/images/preview.jpg" />
     <ul class="card__contact">
       <li class="contact__icon">
-        <a
-          class="contact__icon__pic fas fa-mobile-alt"
-          href="@@phone"
-          target="_blank"
+        <a class="js-preview-phone" href="phone" target="_blank">
+          <i class="icon contact__icon__pic fas fa-mobile-alt"></i
+        ></a>
+      </li>
+      <li class="contact__icon">
+        <a class="js-preview-mail" href="mailto:" target="_blank">
+          <i class="icon contact__icon__pic far fa-envelope"></i
         ></a>
       </li>
       <li class="contact__icon">
         <a
-          class="contact__icon__pic far fa-envelope"
-          href=""
+          class="js-preview-linkedin"
+          href="https://linkedin.com"
+          title="Linkedin contact"
           target="_blank"
-        ></a>
+        >
+          <i class="icon contact__icon__pic fab fa-linkedin-in"></i>
+        </a>
       </li>
       <li class="contact__icon">
-        <a
-          class="contact__icon__pic fab fa-linkedin-in"
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li class="contact__icon">
-        <a
-          class="contact__icon__pic fab fa-github-alt"
-          href=""
-          target="_blank"
+        <a class="js-preview-github" href="" target="_blank">
+          <i class="icon contact__icon__pic fab fa-github-alt"></i
         ></a>
       </li>
     </ul>
