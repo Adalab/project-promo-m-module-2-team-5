@@ -8,7 +8,8 @@ const colorOptions = document.querySelectorAll(".coloroption");
 //Elementos que cambiarán en la preview (nombre,línea, icono)
 const colorNameEl = document.querySelector(".card__name");
 const colorLineEl = document.querySelector(".card__line");
-const colorIconsEl = document.querySelectorAll(".contact__icon");
+const colorIconBorderEl = document.querySelectorAll(".contact__icon");
+const colorIconEl = document.querySelectorAll(".icon");
 
 //2.Función para cambiar los colores
 function changeColors(event) {
@@ -22,10 +23,13 @@ function changeColors(event) {
     colorLineEl.classList.add("card__line--color");
     colorLineEl.classList.remove("color-2b", "color-3b");
     //cambiar color y borde del icono
-    for (const icon of colorIconsEl) {
-      icon.classList.add("contact__icon--color");
-      icon.classList.remove("color-2a", "color-3a", "color-2c", "color-3c");
-      //icon.childNodes.remove("icon");
+    for (const iconBorder of colorIconBorderEl) {
+      iconBorder.classList.add("contact__icon--color");
+      iconBorder.classList.remove("color-2c", "color-3c");
+    }
+    for (const colorIcon of colorIconEl) {
+      colorIcon.classList.add("icon--color");
+      colorIcon.classList.remove("color-2a", "color-3a");
     }
   }
 
@@ -37,9 +41,14 @@ function changeColors(event) {
     colorLineEl.classList.add("color-2b");
     colorLineEl.classList.remove("card__line--color", "color-3b");
     //cambiar color y borde del icono
-    for (const icon of colorIconsEl) {
-      icon.classList.add("color-2a", "color-2c");
-      icon.classList.remove("contact__icon--color", "color-3a", "color-3c");
+    for (const iconBorder of colorIconBorderEl) {
+      iconBorder.classList.add("color-2c");
+      iconBorder.classList.remove("contact__icon--color", "color-3c");
+    }
+
+    for (const colorIcon of colorIconEl) {
+      colorIcon.classList.add("color-2a");
+      colorIcon.classList.remove("icon--color", "color-3a");
     }
   }
 
@@ -51,9 +60,13 @@ function changeColors(event) {
     colorLineEl.classList.add("color-3b");
     colorLineEl.classList.remove("card__line--color", "color-2b");
     //cambiar color y borde del icono
-    for (const icon of colorIconsEl) {
-      icon.classList.add("color-3a", "color-3c");
-      icon.classList.remove("contact__icon--color", "color-2a", "color-2c");
+    for (const iconBorder of colorIconBorderEl) {
+      iconBorder.classList.add("color-3c");
+      iconBorder.classList.remove("contact__icon--color", "color-2c");
+    }
+    for (const colorIcon of colorIconEl) {
+      colorIcon.classList.add("color-3a");
+      colorIcon.classList.remove("icon--color", "color-2a");
     }
   }
 }
