@@ -25,6 +25,7 @@ function changeColors(event) {
     for (const icon of colorIconsEl) {
       icon.classList.add("contact__icon--color");
       icon.classList.remove("color-2a", "color-3a", "color-2c", "color-3c");
+      //icon.childNodes.remove("icon");
     }
   }
 
