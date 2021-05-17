@@ -30,8 +30,8 @@ function renderPreview() {
   previewNameElement.innerHTML =
     data.name === "" ? "Nombre y Apellidos" : data.name;
   previewJobElement.innerHTML = data.job === "" ? "Developer" : data.job;
-  previewEmailElement.innerHTML = data.email === "" ? "" : data.email;
-  previewPhoneElement.innerHTML = data.phone === "" ? "" : data.phone;
+  previewEmailElement.href = data.email === "" ? "" : data.email;
+  previewPhoneElement.href = data.phone === "" ? "" : data.phone;
   previewLinkedinElement.href =
     data.linkedin === "" ? "https://linkedin.com" : data.linkedin;
   previewGithubElement.href =
