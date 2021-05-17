@@ -29,11 +29,12 @@
 
     <label class="form__fill__label">Imagen de perfil </label>
     <div class="form__fill__photo">
-      <button class="form__fill__photo--bt">Añadir imagen</button>
-      <input type="file" name="photo" id="photo" value="Añadir imagen" />
+      <button class="form__fill__photo--bt js__profile-trigger">Añadir imagen</button>
+    <input type="file" name="photo" id="photo" value="Añadir imagen" class="js__profile-upload-btn hidden js-input-text" />
 
-      <div class="form__fill__photo--preview"></div>
-    </div>
+    <div class="form__fill__photo--preview js__profile-image"></div>
+  </div>      
+    
     <label for="email" class="form__fill__label">Email </label>
     <input
       type="email"

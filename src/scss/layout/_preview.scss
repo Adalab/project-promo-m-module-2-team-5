@@ -1,8 +1,8 @@
 .main__preview {
   width: 100%;
   height: 475px;
-  background: linear-gradient(#bfcdd0, #dde9ed);
   display: flex;
+  background: linear-gradient(#bfcdd0, #dde9ed);
   flex-direction: column;
   align-items: center;
   @media all and (min-width: 768px) {
@@ -18,6 +18,7 @@
     min-width: 585px;
   }
 }
+
 .preview__resetbutton {
   width: 75px;
   height: 30px;
@@ -49,17 +50,21 @@
   flex-direction: column;
   justify-content: center;
 }
-.card__line {
+.card__line--color {
   border-left: solid 5px $color-1b;
 }
+
 .card__name {
   height: 20px;
-  color: $color-1a;
   text-transform: capitalize;
   font-family: $font-card;
   font-weight: 700;
   font-size: 18px;
   margin-left: 20px;
+}
+
+.card__name--color {
+  color: $color-1a;
 }
 .card__job {
   height: 20px;
@@ -73,6 +78,7 @@
   width: 100%;
   height: 200px;
   margin: 10px 0 8px 0;
+  background-size: cover;
 }
 .card__contact {
   height: 50px;
@@ -86,8 +92,6 @@
   width: 32px;
   height: 32px;
   font-size: 18px;
-  border: solid 2px $color-1c;
-  color: $color-1a;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -97,7 +101,35 @@
   }
 }
 
-.icon {
+.contact__icon {
   font-size: 18px;
+}
+
+.contact__icon--color {
+  border: solid 2px $color-1c;
   color: $color-1a;
+}
+
+.color-2a {
+  color: $color-2a;
+}
+
+.color-2b {
+  border-left: solid 5px $color-2b;
+}
+
+.color-2c {
+  border: solid 2px $color-2c;
+}
+
+.color-3a {
+  color: $color-3a;
+}
+
+.color-3b {
+  border-left: solid 5px $color-3b;
+}
+
+.color-3c {
+  border: solid 2px $color-3c;
 }
