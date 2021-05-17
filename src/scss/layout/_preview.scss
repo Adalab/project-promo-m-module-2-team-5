@@ -74,7 +74,6 @@
   margin-left: 20px;
   margin-top: 4px;
 }
-//.card__container__pic {}//
 .card__pic {
   display: block;
   width: 100%;
@@ -105,17 +104,12 @@
     font-size: 24px;
   }
 }
-.icon {
+.icon--color {
   color: $color-1a;
-}
-
-.contact__icon {
-  font-size: 18px;
 }
 
 .contact__icon--color {
   border: solid 2px $color-1c;
-  color: $color-1a;
 }
 
 .color-2a {
