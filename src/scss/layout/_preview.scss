@@ -102,7 +102,11 @@
   text-decoration: none;
   :hover {
     font-size: 24px;
+    cursor: pointer;
   }
+}
+.contact__icon__pic {
+  align-content: center;
 }
 .icon--color {
   color: $color-1a;
