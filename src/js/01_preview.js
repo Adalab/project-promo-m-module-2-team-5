@@ -20,7 +20,7 @@ function resetData() {
     iconBorder.classList.remove("color-2c", "color-3c");
   }
   //actualizar el preview
-  renderPreview();
+  resetPreview();
 }
 
 resetButton.addEventListener("click", resetData);
