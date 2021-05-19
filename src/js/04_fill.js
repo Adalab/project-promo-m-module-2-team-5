@@ -28,14 +28,19 @@ function refreshData(ev) {
 
 function renderPreview() {
   previewNameElement.innerHTML =
-    data.name === "" ? "Nombre  Apellidos" : data.name;
-  previewJobElement.innerHTML = data.job === "" ? "Front-end developer" : data.job;
+    data.name === "" ? "Nombre Apellidos" : data.name;
+  previewJobElement.innerHTML =
+    data.job === "" ? "Front-end developer" : data.job;
   previewEmailElement.href = data.email === "" ? "" : data.email;
   previewPhoneElement.href = data.phone === "" ? "" : data.phone;
   previewLinkedinElement.href =
-    data.linkedin === "" ? "https://linkedin.com" : data.linkedin;
+    data.linkedin === ""
+      ? "https://linkedin.com"
+      : `https://www.linkedin.com/in/${data.linkedin}`;
   previewGithubElement.href =
-    data.github === "" ? "https://github.com" : `https://github/${data.github}`;
+    data.github === ""
+      ? "https://github.com"
+      : `https://github.com/${data.github}`;
 }
 
 function handleChangeForm(ev) {
