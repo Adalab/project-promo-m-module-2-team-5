@@ -1,4 +1,13 @@
 "use strict";
+
+const resetButton = document.querySelector(".js-reset-btn");
+
+function handleReset() {
+  renderPreview();
+}
+
+resetButton.addEventListener("click", handleReset);
+
 /*
 //input en el formulario
 const cardFullname = document.querySelector('.form__fill__input');

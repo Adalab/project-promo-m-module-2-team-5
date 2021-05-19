@@ -9,6 +9,7 @@ const previewLinkedinElement = document.querySelector(".js-preview-linkedin");
 const previewGithubElement = document.querySelector(".js-preview-github");
 
 const data = {
+  pallette: "",
   name: "",
   job: "",
   email: "",
@@ -29,7 +30,8 @@ function refreshData(ev) {
 function renderPreview() {
   previewNameElement.innerHTML =
     data.name === "" ? "Nombre  Apellidos" : data.name;
-  previewJobElement.innerHTML = data.job === "" ? "Front-end developer" : data.job;
+  previewJobElement.innerHTML =
+    data.job === "" ? "Front-end developer" : data.job;
   previewEmailElement.href = data.email === "" ? "" : data.email;
   previewPhoneElement.href = data.phone === "" ? "" : data.phone;
   previewLinkedinElement.href =
