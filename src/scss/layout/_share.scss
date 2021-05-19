@@ -17,8 +17,25 @@
   width: 200px;
   height: 50px;
   border-radius: 12px;
+  background-color: $color-icon;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 30px auto;
+  font-size: 18px;
+  font-family: $font-main;
+  border-color: $color-icon;
+  box-shadow: 0 0 5px 3px rgba(213, 213, 213, 0.4);
+}
+.button__hidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
   background-color: rgba(213, 213, 213, 0.7);
   box-shadow: 0 0 5px 3px rgba(213, 213, 213, 0.4);
+
   margin: 30px auto;
 }
 .button__icon {
