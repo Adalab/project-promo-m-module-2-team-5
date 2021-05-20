@@ -2,6 +2,18 @@
 
 const resetButton = document.querySelector(".js-reset-btn");
 const inputEls = document.querySelectorAll(".form__fill__input");
+const previewPhotoElement = document.querySelector(".js__profile-preview");
+
+function resetPreview() {
+  data.palette = "1";
+  previewNameElement.innerHTML = "Nombre Apellidos";
+  previewJobElement.innerHTML = "Front-end developer";
+  previewEmailElement.href = "";
+  previewPhoneElement.href = "";
+  previewLinkedinElement.href = "";
+  previewGithubElement.href = "";
+  previewPhotoElement.style.backgroundImage = "";
+}
 
 function resetData() {
   //vacíar datos formulario
@@ -20,8 +32,7 @@ function resetData() {
     iconBorder.classList.add("contact__icon--color");
     iconBorder.classList.remove("color-2c", "color-3c");
   }
-  //actualizar el preview
-  renderPreview();
+  resetPreview();
 }
 
 resetButton.addEventListener("click", resetData);
