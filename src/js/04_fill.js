@@ -11,6 +11,7 @@ const previewGithubElement = document.querySelector(".js-preview-github");
 const data = {
   name: "",
   job: "",
+  photo: "",
   email: "",
   phone: "",
   linkedin: "",
