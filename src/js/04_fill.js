@@ -9,6 +9,7 @@ const previewLinkedinElement = document.querySelector(".js-preview-linkedin");
 const previewGithubElement = document.querySelector(".js-preview-github");
 
 const data = {
+  palette: "1",
   name: "",
   job: "",
   photo: "",

@@ -1,7 +1,7 @@
 const createButton = document.querySelector(".js-buttonCreateCard");
 const responseElement = document.querySelector(".js-response");
 const twitterContainer = document.querySelector(".js-hidden-collapsable");
-
+const urlElement = document.querySelector(".js-url");
 function handleClickCreate(event) {
   // event.preventDefault();
 
@@ -38,6 +38,7 @@ function handleClickCreate(event) {
       headers: {
         "content-type": "application/json",
       },
+
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
@@ -46,11 +47,10 @@ function handleClickCreate(event) {
           responseElement.innerHTML = "<p>Revisa los campos sin completar</p>";
           responseElement.classList.remove("hidden");
         } else {
-          /*responseElement.innerHTML = `
-            <h3>La tarjeta ha sido creada:</h3>
-            <p><a href="${data.cardURL}">${data.cardURL}</a></p>`;*/
+          urlElement.innerHTML = `
+                    <p><a href="${data.cardURL}">${data.cardURL}</a></p>`;
           responseElement.classList.remove("hidden");
-          twitterContainer.classList.add("js-hidden");
+          //twitterContainer.classList.add("js-hidden");
         }
       })
       .catch(() => {
