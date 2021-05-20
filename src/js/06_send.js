@@ -5,8 +5,7 @@ function handleClickCreate(event) {
   event.preventDefault();
 
   if (data.name === "") {
-    responseElement.innerHTML =
-      "<p>Recuerda completar el campo 'Nombre completo'</p>";
+    responseElement.innerHTML = "Recuerda completar el campo Nombre completo";
     responseElement.classList.remove("hidden");
   } else if (data.job === "") {
     responseElement.innerHTML = "<p>Recuerda completar el campo 'Puesto'</p>";
