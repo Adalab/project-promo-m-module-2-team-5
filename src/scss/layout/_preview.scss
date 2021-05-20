@@ -56,11 +56,14 @@
 
 .card__name {
   height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   text-transform: capitalize;
   font-family: $font-card;
   font-weight: 700;
   font-size: 18px;
   margin-left: 20px;
+  white-space: nowrap;
 }
 
 .card__name--color {
@@ -73,6 +76,8 @@
   font-size: 16px;
   margin-left: 20px;
   margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__pic {
   display: block;
@@ -81,8 +86,12 @@
   margin: 10px 0 8px 0;
   background-size: cover;
   background-position: center;
+}
+
+.pic_background {
   background-image: url("../images/preview.jpg");
 }
+
 .card__contact {
   height: 50px;
   width: 164px;

@@ -29,7 +29,7 @@ function refreshData(ev) {
 
 function renderPreview() {
   previewNameElement.innerHTML =
-    data.name === "" ? "Nombre Apellidos" : data.name;
+    data.name === "" ? "Nombre Apellido" : data.name;
   previewJobElement.innerHTML =
     data.job === "" ? "Front-end developer" : data.job;
   previewEmailElement.href = data.email === "" ? "" : data.email;

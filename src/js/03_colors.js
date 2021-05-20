@@ -4,6 +4,7 @@
 
 //Inputs radio opciones de colores
 const colorOptions = document.querySelectorAll(".coloroption");
+console.log(colorOptions);
 
 //Elementos que cambiarán en la preview (nombre,línea, icono)
 const colorNameEl = document.querySelector(".card__name");
@@ -14,7 +15,10 @@ const colorIconEl = document.querySelectorAll(".icon");
 //2.Función para cambiar los colores
 function changeColors(event) {
   const selectedOption = event.currentTarget.value;
+  colorOrigin(selectedOption);
+}
 
+function colorOrigin(selectedOption) {
   if (selectedOption === "1") {
     //cambiar color título
     colorNameEl.classList.add("card__name--color");
