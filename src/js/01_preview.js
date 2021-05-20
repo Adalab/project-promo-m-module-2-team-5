@@ -2,7 +2,7 @@
 
 const resetButton = document.querySelector(".js-reset-btn");
 const inputEls = document.querySelectorAll(".form__fill__input");
-let previewPhotoElement = document.querySelector(".js-profile-preview");
+let previewPhotoElement = document.querySelector(".js__profile-preview");
 
 function resetPreview() {
   data.palette = "1";
@@ -12,7 +12,7 @@ function resetPreview() {
   previewPhoneElement.href = "";
   previewLinkedinElement.href = "";
   previewGithubElement.href = "";
-  //previewPhotoElement? = "";
+  previewPhotoElement.style.backgroundImage = ""; // HOLIS
 }
 
 function resetData() {
