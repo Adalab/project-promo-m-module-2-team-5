@@ -20,7 +20,7 @@
   background-color: $color-icon;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 30px auto;
+  margin: 0 auto 20px auto;
   font-size: 18px;
   font-family: $font-main;
   border-color: $color-icon;
@@ -87,4 +87,13 @@
 }
 .hidden {
   display: none;
+}
+.message {
+  font-size: 16px;
+  color: $color-icon;
+  font-weight: bold;
+  text-align: center;
+  font-family: $font-main;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

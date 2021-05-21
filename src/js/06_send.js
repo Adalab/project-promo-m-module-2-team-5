@@ -1,10 +1,9 @@
 const createButton = document.querySelector(".js-buttonCreateCard");
 const responseElement = document.querySelector(".js-response");
-const twitterContainer = document.querySelector(".js-hidden-collapsable");
+const twitterContainer = document.querySelector(".js-hidden");
 const urlElement = document.querySelector(".js-url");
-function handleClickCreate(event) {
-  // event.preventDefault();
 
+function handleClickCreate(event) {
   if (data.name === "") {
     responseElement.innerHTML = "Recuerda completar el campo 'Nombre'.";
     responseElement.classList.remove("hiddenIt");
@@ -14,10 +13,6 @@ function handleClickCreate(event) {
   } else if (data.photo === "") {
     responseElement.innerHTML = "<p>Recuerda subir una imagen.</p>";
     responseElement.classList.remove("hiddenIt");
-    /*} else if (data.phone === "") {
-    responseElement.innerHTML =
-      "<p>Recuerda completar el campo 'Puesto'</p>";
-    responseElement.classList.remove("hidden");*/
   } else if (data.email === "") {
     responseElement.innerHTML = "<p>Recuerda completar el campo 'Email'.</p>";
     responseElement.classList.remove("hiddenIt");
@@ -45,17 +40,17 @@ function handleClickCreate(event) {
       .then((data) => {
         if (data.success === false) {
           responseElement.innerHTML = "<p>Revisa los campos sin completar</p>";
-          responseElement.classList.remove("hidden");
+          responseElement.classList.remove("hiddenIt");
         } else {
           urlElement.innerHTML = `
                     <p><a href="${data.cardURL}">${data.cardURL}</a></p>`;
-          responseElement.classList.remove("hidden");
-          //twitterContainer.classList.add("js-hidden");
+          responseElement.classList.remove("hiddenIt");
+          twitterContainer.classList.remove("js-hidden");
         }
       })
       .catch(() => {
         responseElement.innerHTML = `<p class="error">El servidor parece estar fuera de servicio. Paciencia. Inténtalo más tarde.</p>`;
-        responseElement.classList.remove("hidden");
+        responseElement.classList.remove("hiddenIt");
       });
   }
 }
