@@ -1,8 +1,8 @@
 const createButton = document.querySelector(".js-buttonCreateCard");
 const responseElement = document.querySelector(".js-response");
-const twitterContainer = document.querySelector(".js-hidden");
+const twitterContainer = document.querySelector(".js-hiddentw");
 const urlElement = document.querySelector(".js-url");
-
+const twbtnElement = document.querySelector(".js-buttontwiter");
 function handleClickCreate(event) {
   event.preventDefault();
   if (data.name === "") {
@@ -104,10 +104,11 @@ function sendFetch(data) {
         responseElement.classList.remove("hiddenIt");
         console.log(JSON.stringify(data));
       } else {
-        urlElement.innerHTML = `
-                    <p><a href="${data.cardURL}">${data.cardURL}</a></p>`;
+        let shareLink = data.cardURL;
         responseElement.classList.remove("hiddenIt");
-        twitterContainer.classList.remove("js-hidden");
+        twitterContainer.classList.remove("hidden");
+        urlElement.innerHTML = `
+                    <p><a href="${shareLink}">${shareLink}</a></p>`;
       }
       console.log(data);
     })
@@ -116,3 +117,7 @@ function sendFetch(data) {
       responseElement.classList.remove("hiddenIt");
     });
 }
+function handleTwitterShare() {
+  twbtnElement.href = `https://twitter.com/?lang=es=${shareLink}`;
+}
+twbtnElement.addEventListener("click", handleTwitterShare);

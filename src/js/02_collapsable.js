@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use strict";
 
 //Traer el elemento del html//
@@ -30,22 +29,6 @@ function handlerCollapsable(event) {
     }
   }
 }
-//CREA TU TARJETA, esta función es para el collapsable del botón crea tu tarjeta
-const hiddenButton = document.querySelector(".js-hidden");
-
-function handleHiddenButton(ev) {
-  const hiddenCollapsableButton = document.querySelector(
-    ".js-hidden-collapsable"
-  );
-  const clicked = ev.currentTarget;
-
-  if (clicked !== hiddenCollapsableButton) {
-    hiddenCollapsableButton.classList.remove("hidden");
-  }
-}
-
-//hiddenButton.addEventListener('click', handleHiddenButton);
-=======
 'use strict';
 
 //Traer el elemento del html//
@@ -78,19 +61,4 @@ function handlerCollapsable(event) {
     }
   }
 }
-//CREA TU TARJETA, esta función es para el collapsable del botón crea tu tarjeta
-const hiddenButton = document.querySelector('.js-hidden');
 
-function handleHiddenButton(ev) {
-  const hiddenCollapsableButton = document.querySelector(
-    '.js-hidden-collapsable'
-  );
-  const clicked = ev.currentTarget;
-
-  if (clicked !== hiddenCollapsableButton) {
-    hiddenCollapsableButton.classList.remove('hidden');
-  }
-}
-
-hiddenButton.addEventListener('click', handleHiddenButton);
->>>>>>> 0c8d222b6bb523a81a380d3b19e2c5dd05b23a32
