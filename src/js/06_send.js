@@ -4,6 +4,7 @@ const twitterContainer = document.querySelector(".js-hidden");
 const urlElement = document.querySelector(".js-url");
 
 function handleClickCreate(event) {
+  saveInLocalStorage();
   if (data.name === "") {
     responseElement.innerHTML = "Recuerda completar el campo 'Nombre'.";
     responseElement.classList.remove("hiddenIt");
@@ -49,7 +50,7 @@ function handleClickCreate(event) {
         }
       })
       .catch(() => {
-        responseElement.innerHTML = `<p class="error">El servidor parece estar fuera de servicio. Paciencia. Inténtalo más tarde.</p>`;
+        responseElement.innerHTML = `<p class="error">El servidor parece estar fuera de servicio.</p>`;
         responseElement.classList.remove("hiddenIt");
       });
   }
