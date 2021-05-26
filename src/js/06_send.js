@@ -4,6 +4,7 @@ const twitterContainer = document.querySelector(".js-hidden");
 const urlElement = document.querySelector(".js-url");
 
 function handleClickCreate(event) {
+  event.preventDefault();
   if (data.name === "") {
     responseElement.innerHTML = "Recuerda completar el campo 'Nombre'.";
     responseElement.classList.remove("hiddenIt");
@@ -28,33 +29,15 @@ function handleClickCreate(event) {
     responseElement.innerHTML = "<p>Recuerda completar el campo 'Github'.</p>";
     responseElement.classList.remove("hiddenIt");
   } else {
-    fetch("https://awesome-profile-cards.herokuapp.com/card", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success === false) {
-          responseElement.innerHTML = "<p>Revisa los campos sin completar</p>";
-          responseElement.classList.remove("hiddenIt");
-        } else {
-          urlElement.innerHTML = `
-                    <p><a href="${data.cardURL}">${data.cardURL}</a></p>`;
-          responseElement.classList.remove("hiddenIt");
-          twitterContainer.classList.remove("js-hidden");
-        }
-      })
-      .catch(() => {
-        responseElement.innerHTML = `<p class="error">El servidor parece estar fuera de servicio. Paciencia. Inténtalo más tarde.</p>`;
-        responseElement.classList.remove("hiddenIt");
-      });
+    console.log(data);
+    console.log(data.coloroption);
+    data.palette = data.coloroption;
+    delete data.coloroption;
+    console.log(data.coloroption);
+    sendFetch(data);
   }
 }
-
+console.log(data);
 createButton.addEventListener("click", handleClickCreate);
 
 function pruebaemail(valor) {
@@ -64,4 +47,72 @@ function pruebaemail(valor) {
   } else {
     return false;
   }
+}
+/*function createData() {
+  let data = {
+    palette: "",
+    name: previewNameElement.value,
+    job: previewJobElement.value,
+    email: previewEmailElement.value,
+    //phone: previewPhoneElement.value,
+    linkedin: previewLinkedinElement.value,
+    github: previewGithubElement.value,
+    photo: updatePhoto(),
+  };
+
+  fetch("https://awesome-profile-cards.herokuapp.com/card", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+    },
+
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.success === false) {
+        responseElement.innerHTML = "<p>Revisa los campos sin completar</p>";
+        responseElement.classList.remove("hiddenIt");
+      } else {
+        urlElement.innerHTML = `
+                    <p><a href="${data.cardURL}">${data.cardURL}</a></p>`;
+        responseElement.classList.remove("hiddenIt");
+        twitterContainer.classList.remove("js-hidden");
+      }
+      console.log(data);
+    })
+    .catch(() => {
+      responseElement.innerHTML = `<p class="error">El servidor parece estar fuera de servicio. Paciencia. Inténtalo más tarde.</p>`;
+      responseElement.classList.remove("hiddenIt");
+    });
+}*/
+
+function sendFetch(data) {
+  fetch("https://awesome-profile-cards.herokuapp.com/card/", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "content-type": "application/json",
+    },
+
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.success === false) {
+        responseElement.innerHTML = "<p>Revisa los campos sin completar</p>";
+        responseElement.classList.remove("hiddenIt");
+        console.log(JSON.stringify(data));
+      } else {
+        urlElement.innerHTML = `
+                    <p><a href="${data.cardURL}">${data.cardURL}</a></p>`;
+        responseElement.classList.remove("hiddenIt");
+        twitterContainer.classList.remove("js-hidden");
+      }
+      console.log(data);
+    })
+    .catch(() => {
+      responseElement.innerHTML = `<p class="error">El servidor parece estar fuera de servicio. Paciencia. Inténtalo más tarde.</p>`;
+      responseElement.classList.remove("hiddenIt");
+    });
 }
