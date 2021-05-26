@@ -24,9 +24,8 @@ function refreshData(ev) {
   const inputValueChanged = ev.target.value;
 
   data[inputNameChanged] = inputValueChanged;
-
-  console.log(data);
 }
+console.log(data);
 
 function renderPreview() {
   previewNameElement.innerHTML =
@@ -56,5 +55,3 @@ function handleChangeForm(ev) {
 }
 
 form.addEventListener("change", handleChangeForm);
-
-console.log(">> Form Ready :)");

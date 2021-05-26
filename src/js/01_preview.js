@@ -1,5 +1,5 @@
 "use strict";
-
+let photo = "";
 const resetButton = document.querySelector(".js-reset-btn");
 const inputEls = document.querySelectorAll(".form__fill__input");
 const previewPhotoElement = document.querySelector(".js__profile-preview");
