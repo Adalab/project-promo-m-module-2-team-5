@@ -12,11 +12,11 @@ let data = {
   palette: 1,
   name: "",
   job: "",
-  photo: "",
   email: "",
   phone: "",
   linkedin: "",
   github: "",
+  photo: "",
 };
 
 function refreshData(ev) {
