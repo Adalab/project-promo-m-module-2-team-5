@@ -47,7 +47,7 @@ function renderPreview() {
 
 function handleChangeForm(ev) {
   // 1. Cojo el nuevo valor y lo guardo en una variable
-
+  saveInLocalStorage();
   refreshData(ev);
 
   // 2. Re-pinto la tarjeta de preview
