@@ -1,9 +1,3 @@
-/*.share__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}*/
 .shared {
   display: flex;
   flex-direction: column;
@@ -20,7 +14,7 @@
   background-color: $color-icon;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0 auto 20px auto;
+  margin: 25px auto;
   font-size: 18px;
   font-family: $font-main;
   border-color: $color-icon;

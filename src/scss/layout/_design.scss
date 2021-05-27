@@ -31,7 +31,9 @@
 }
 .pallete1,
 .pallete2,
-.pallete3 {
+.pallete3,
+.pallete4,
+.pallete5 {
   width: 30px;
   height: 25px;
 }
@@ -66,5 +68,27 @@
   }
   &.c {
     background-color: $color-3c;
+  }
+}
+.pallete4 {
+  &.a {
+    background-color: $color-4a;
+  }
+  &.b {
+    background-color: $color-4b;
+  }
+  &.c {
+    background-color: $color-4c;
+  }
+}
+.pallete5 {
+  &.a {
+    background-color: $color-5a;
+  }
+  &.b {
+    background-color: $color-5b;
+  }
+  &.c {
+    background-color: $color-5c;
   }
 }

@@ -1,0 +1,63 @@
+.box-tooltip {
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+  &.phone {
+    margin-left: -165px;
+    margin-top: -50px;
+  }
+  &.mail {
+    margin-left: -70px;
+    margin-top: -25px;
+  }
+  &.linkedin {
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+  &.github {
+    margin-left: 90px;
+    margin-top: -40px;
+  }
+}
+.box-tooltip:hover .tooltip {
+  display: inline;
+}
+
+.tooltip:before {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #777777;
+  bottom: -6px;
+  content: "";
+  height: 0;
+  left: -7%;
+  margin-left: 10px;
+  position: absolute;
+  width: 0;
+}
+.tooltip {
+  background-color: #777777;
+  color: #ffffff;
+  font-family: $font-main;
+  border-radius: 2px;
+  display: none;
+  padding: 10px 20px;
+  position: absolute;
+
+  font-size: 12px;
+  &.phone {
+    top: -50px;
+  }
+  &.mail {
+    top: -100px;
+  }
+  &.linkedin {
+    top: -100px;
+  }
+  &.github {
+    top: -90px;
+  }
+}
