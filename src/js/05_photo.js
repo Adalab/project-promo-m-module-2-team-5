@@ -12,22 +12,14 @@ function writeImage() {
 }
 
 function updatePhoto() {
-  if (data.photo === "") {
-    profileImage.style.backgroundImage = ``;
-    profilePreview.style.backgroundImage = ``;
-  } else {
-    profileImage.style.backgroundImage = `url(${data.photo})`;
-    profilePreview.style.backgroundImage = `url(${data.photo})`;
+  const currentPhoto = photo;
+  if (currentPhoto !== "") {
+    profilePreview.style.backgroundImage = `url(${currentPhoto})`;
+    profileImage.style.backgroundImage = `url(${currentPhoto})`;
+    data.photo = fr.result;
   }
-  // const currentPhoto = photo;
-  // if (currentPhoto !== "") {
-  //   profilePreview.style.backgroundImage = `url(${currentPhoto})`;
-  //   profileImage.style.backgroundImage = `url(${currentPhoto})`;
-  //   data.photo = fr.result;
-  // }
-  // return data.photo;
+  return data.photo;
 }
-
 function clearPhoto() {
   photo = "";
   profilePreview.style.backgroundImage = "";
