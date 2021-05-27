@@ -1,23 +1,5 @@
 /* eslint-disable no-unused-vars */
 "use strict";
-const form = document.querySelector(".js-form");
-const previewNameElement = document.querySelector(".js-preview-name");
-const previewJobElement = document.querySelector(".js-preview-job");
-const previewEmailElement = document.querySelector(".js-preview-mail");
-const previewPhoneElement = document.querySelector(".js-preview-phone");
-const previewLinkedinElement = document.querySelector(".js-preview-linkedin");
-const previewGithubElement = document.querySelector(".js-preview-github");
-
-let data = {
-  palette: 1,
-  name: "",
-  job: "",
-  email: "",
-  phone: "",
-  linkedin: "",
-  github: "",
-  photo: "",
-};
 
 function refreshData(ev) {
   const inputNameChanged = ev.target.name;
@@ -27,7 +9,7 @@ function refreshData(ev) {
 }
 console.log(data);
 
-function renderPreview() {
+function renderPreview(data) {
   previewNameElement.innerHTML =
     data.name === "" ? "Nombre Apellido" : data.name;
   previewJobElement.innerHTML =
@@ -52,6 +34,7 @@ function handleChangeForm(ev) {
   // 2. Re-pinto la tarjeta de preview
 
   renderPreview();
+  saveInLocalStorage();
 }
 
 form.addEventListener("change", handleChangeForm);
