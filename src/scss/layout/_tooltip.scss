@@ -38,7 +38,7 @@
   bottom: -6px;
   content: "";
   height: 0;
-  left: -5%;
+  left: -7%;
   margin-left: 10px;
   position: absolute;
   width: 0;
@@ -51,6 +51,18 @@
   display: none;
   padding: 10px 20px;
   position: absolute;
-  top: -85px;
+
   font-size: 12px;
+  &.phone {
+    top: -50px;
+  }
+  &.mail {
+    top: -100px;
+  }
+  &.linkedin {
+    top: -100px;
+  }
+  &.github {
+    top: -90px;
+  }
 }
