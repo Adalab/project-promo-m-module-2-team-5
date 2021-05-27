@@ -5,12 +5,27 @@
   text-align: center;
   width: 40px;
   height: 30px;
-  margin-left: -165px;
-  margin-top: -50px;
+  &.phone {
+    margin-left: -165px;
+    margin-top: -50px;
+  }
+  &.mail {
+    margin-left: -70px;
+    margin-top: -25px;
+  }
+  &.linkedin {
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+  &.github {
+    margin-left: 90px;
+    margin-top: -40px;
+  }
 }
 .box-tooltip:hover .tooltip {
   display: inline;
 }
+
 /*.box-tooltip {
   cursor: pointer;
 }
@@ -39,4 +54,5 @@
   padding: 10px 20px;
   position: absolute;
   top: -85px;
+  font-size: 12px;
 }
