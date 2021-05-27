@@ -69,7 +69,7 @@ function sendFetch(data) {
         responseElement.classList.add("hidden");
         twitterContainer.classList.remove("hidden");
         urlElement.innerHTML = `
-                    <p><a href="${shareLink}">${shareLink}</a></p>`;
+                    <p><a href="${shareLink}">¡Aquí puedes verla!</a></p>`;
       }
       console.log(data);
     })

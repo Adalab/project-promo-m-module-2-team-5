@@ -54,22 +54,29 @@
   margin-top: 20px;
 }
 .shared__link {
-  font-size: 12px;
+  font-size: 18px;
   color: $color-icon;
   font-weight: 500;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin: 30px auto;
 }
 .shared__button--twitter {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 180px;
-  height: 30px;
+  height: 35px;
   background-color: #00a0f5;
-  border-radius: 3px;
+  border: inherit 2px #00a0f5;
+  border-radius: 5px;
   color: #ffffff;
   margin-bottom: 30px;
+  &:hover {
+    color: #ffffff;
+  }
+}
+.share__result--twitterlink {
+  color: #ffffff;
+  margin-left: 10px;
 }
 .shared__button--text {
   font-size: 14px;
