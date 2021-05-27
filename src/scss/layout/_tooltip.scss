@@ -25,12 +25,7 @@
 .box-tooltip:hover .tooltip {
   display: inline;
 }
-/*.box-tooltip {
-  cursor: pointer;
-}
-.box-tooltip:hover .tooltip {
-  display: block;
-}*/
+
 .tooltip:before {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
