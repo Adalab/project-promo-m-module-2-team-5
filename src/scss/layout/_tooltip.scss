@@ -5,12 +5,19 @@
   text-align: center;
   width: 40px;
   height: 30px;
-  margin-left: -165px;
-  margin-top: -50px;
+  &.phone {
+    margin-left: -165px;
+    margin-top: -50px;
+  }
+  &.mail {
+    margin-left: -100px;
+    margin-top: -50px;
+  }
 }
 .box-tooltip:hover .tooltip {
   display: inline;
 }
+
 /*.box-tooltip {
   cursor: pointer;
 }
