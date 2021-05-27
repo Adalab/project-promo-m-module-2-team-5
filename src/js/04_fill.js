@@ -33,7 +33,7 @@ function handleChangeForm(ev) {
 
   // 2. Re-pinto la tarjeta de preview
 
-  renderPreview();
+  renderPreview(data);
   saveInLocalStorage();
 }
 
