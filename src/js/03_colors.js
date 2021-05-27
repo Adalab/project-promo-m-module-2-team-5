@@ -73,6 +73,8 @@ function colorOrigin(selectedOption) {
       colorIcon.classList.remove("icon--color", "color-2a");
     }
   }
+
+  fillProgressBar();
 }
 
 //3.evento

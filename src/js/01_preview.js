@@ -13,6 +13,7 @@ function resetPreview() {
   previewGithubElement.href = "";
   previewPhotoElement.style.backgroundImage = "";
   profileImage.style.backgroundImage = "";
+  progressBarEl.value = 0;
 }
 
 function resetData() {
@@ -32,6 +33,7 @@ function resetData() {
   const originPallete = "1";
   colorOrigin(originPallete);
 
+  progressBarEl.value = 0;
   resetPreview();
   //for (let i= 0; i < colorOptions.length; i++) {
   //colorOptions[1][].innerHTML = `<input class="coloroption" type="radio" name="coloroption" id="pallete" value="1" />`;

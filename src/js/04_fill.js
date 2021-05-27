@@ -24,6 +24,7 @@ function refreshData(ev) {
   const inputValueChanged = ev.target.value;
 
   data[inputNameChanged] = inputValueChanged;
+  fillProgressBar();
 }
 console.log(data);
 
